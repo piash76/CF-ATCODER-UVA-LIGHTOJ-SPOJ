@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,i,sum=0,cnt=1,m,x;
+    cin>>n>>x;
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+
+    sort(a,a+n);
+
+    for (int j = 0; j < n; j++)
+        {
+            if(a[j]!=a[j+1])
+            {
+
+
+            cnt++;
+            j++;
+            }
+        }
+
+
+    int r=cnt-1;
+
+    sum=(cnt+r)-1;
+
+
+    cout<<sum<<endl;
+
+
+}
